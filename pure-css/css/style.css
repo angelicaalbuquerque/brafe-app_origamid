@@ -68,18 +68,14 @@ a {
 
 /* MAIN */
 
-.main-container::after,
-.main-container::before {
-  content: "";
-  display: table;
-  clear: both;
+.main-container {
+  display: flex;
 }
 
 /* SIDE-NAV */
 .side-nav {
   width: 300px;
   background: #252525;
-  float: left;
 }
 
 .side-nav li a {

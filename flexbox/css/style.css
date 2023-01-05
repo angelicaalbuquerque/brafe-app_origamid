@@ -59,10 +59,16 @@ a {
 
 /*MAIN*/
 
+.main-container {
+  display: flex;
+}
+
 /*SIDE NAV*/
 
 .side-nav {
   background: #252525;
+  flex: 1;
+  max-width: 300px;
 }
 
 .side-nav li a {
@@ -187,12 +193,47 @@ a {
 @media (max-width: 739px) {
   .header {
     flex-direction: column;
-    margin-top: 10px;
     justify-content: center;
     align-items: center;
   }
 
   .header-logo {
+    margin-bottom: 15px;
+  }
+
+  .main-container {
+    flex-direction: column;
+  }
+
+  .side-nav {
+    margin: 10px;
+    background: none;
+    max-width: 100%;
+  }
+
+  .side-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .side-nav li {
     margin-bottom: 10px;
+    margin-right: 10px;
+  }
+
+  .side-nav li a::before {
+    top: 0;
+    margin: 0;
+  }
+
+  .side-nav li a {
+    width: 44px;
+    height: 44px;
+    overflow: hidden;
+    border: none;
+    padding: 10px;
+    color: #252525;
+    background: #252525;
+    border-radius: 4px;
   }
 }

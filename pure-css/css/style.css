@@ -213,3 +213,12 @@ a {
   width: 70px;
   display: inline-block;
 }
+
+/* Footer */
+.footer {
+  font-size: calc(18em / 16);
+  background: #d6d3c8;
+  text-align: center;
+  padding: 60px 0;
+  line-height: calc(22.4em / 16);
+}

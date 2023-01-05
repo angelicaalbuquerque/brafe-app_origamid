@@ -37,13 +37,6 @@ a {
   padding: 20px;
 }
 
-/*Header*/
-
-.header {
-  background: #d6d3c8;
-  padding: 20px;
-}
-
 .header::after,
 .header::before {
   content: "";
@@ -74,6 +67,13 @@ a {
 }
 
 /* MAIN */
+
+.main-container::after,
+.main-container::before {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 /* SIDE-NAV */
 .side-nav {
@@ -123,4 +123,37 @@ a {
 
 .nav-hospedagens::before {
   background-position: 0 calc(-24px * 5);
+}
+
+/* PRODUTOS */
+.produtos {
+  width: calc(100% - 300px);
+  max-width: 960px;
+  float: left;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.produtos header::before,
+.produtos header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.produtos h1 {
+  font-size: calc(36em / 16);
+  float: left;
+}
+
+.adicionar-produtos {
+  font-size: calc(18em / 16);
+  font-family: Courier, "Courier New", monospace;
+  background: #c17139;
+  color: #e7e4d8;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px;
+  border-radius: 4px;
+  float: right;
 }
